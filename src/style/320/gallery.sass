@@ -1,0 +1,47 @@
+.gallery
+    // width: 60%
+    // margin: 0 auto
+    padding: 10px
+    display: flex
+    // margin-bottom: 20px
+    &__img
+        // width: 600px
+        width: 50%
+        margin: 0 auto
+    &__view-container
+        position: relative
+        width: 100%
+        margin-right: 10px
+        // display: flex
+        // justify-content: space-between
+        svg
+            position: absolute
+            top: 50%
+            width: 50px
+            height: 50px
+            cursor: pointer
+            user-select: none
+        svg:hover 
+            background: #0000004f
+            color: white
+        svg:last-child
+            right: 0
+    &__preview-container
+        // display: flex
+        // justify-content: center
+        // flex-direction: column
+        column-count: 2
+
+    &__preview
+        // width: 100px
+        // width: 60px
+        width: 40px
+        cursor: pointer
+    &__preview_active
+        outline: 1px solid red
+        z-index: 1
+    &__img_hidde
+        display: none
+
+    &__img_show
+        display: block

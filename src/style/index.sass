@@ -1,0 +1,61 @@
+.app__page
+    position: relative
+
+.app__menu-panel
+    position: fixed
+    background: white
+    width: 50%
+    height: 100%
+    z-index: 2
+    animation: in 0.3s forwards ease-in-out
+    box-shadow: 3px 0px 10px 0px #34303087
+    .header__group-links 
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 35px 0
+        div
+            margin: 20px
+.app__modal
+    position: absolute
+    background: #00000082
+    z-index: 1
+    width: 100%
+    height: 100%
+.app__btn-up
+    position: fixed
+    right: 0
+    bottom: 0
+    padding: 15px
+    z-index: 5
+    svg
+        width: 50px
+        height: 50px
+        fill: #84dbfe
+        box-shadow: 0px 0 0 0 #121111
+
+.app__btn-up:hover svg
+    fill: #709aab
+    cursor: pointer
+    
+
+
+@keyframes in 
+  from 
+    left: -100%
+  to 
+    left: 0%
+
+@import './320'
+@media screen and (min-width: 374px)
+    @import './375'
+    @media screen and (min-width: 424px)
+        @import './425'
+        @media screen and ( min-width: 520px )
+            @import './520'
+            @media screen and (min-width: 767px)
+                @import './756'
+                @media screen and ( min-width: 1024px )
+                    @import './1024'    
+                    @media screen and (min-width: 1200px)
+                        @import './1200'

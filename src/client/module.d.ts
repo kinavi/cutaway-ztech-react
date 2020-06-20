@@ -1,5 +1,0 @@
-declare module 'react'
-declare module 'uuid'
-declare module 'react-redux'
-declare module 'redux-thunk'
-declare module 'redux-devtools-extension'
