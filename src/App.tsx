@@ -27,7 +27,7 @@ import { Table } from './components/table.jsx';
 import { ShowCaseContainer } from './components/showcase.jsx';
 import { Contacts } from './components/contacts.jsx';
 import { NavLink } from './components/Links.jsx';
-
+import Faq from './components/Faq';
 import { store } from './redux/store';
 
 const LangPanel = ({ lang, links }) => (
@@ -62,10 +62,10 @@ const Page = (props) => {
     setIsOpenMenu(false);
   };
 
-  useEffect(() => {
-    // const lang = navigator.language;
-    // history.push(`/${lang}`);
-  }, []);
+  // useEffect(() => {
+  //   // const lang = navigator.language;
+  //   // history.push(`/${lang}`);
+  // }, []);
 
   const renderModalPanel = () => <div className="app__modal" onClick={onCloesMenu} />;
   const renderMenuPanel = (links) => (
@@ -100,7 +100,9 @@ const Page = (props) => {
       <Table {...data[index].table} />
       <ShowCaseContainer {...data[index].ShowCases} />
       {/* <Warranty data={data.WarrantyIcont}/> */}
+      <Faq {...data[index].faq} />
       <Contacts {...data[index].contacts} />
+
       {/* </div> */}
     </div>
   );
@@ -108,21 +110,20 @@ const Page = (props) => {
 
 const App = () => (
   // <Provider store={store}>
-  <BrowserRouter>
-    <Switch>
-      {/* <Route path='/sr'>
+
+  <Switch>
+    {/* <Route path='/sr'>
           <Page data={data} index={'sr'}/>
         </Route> */}
-      <Route path="/ru">
-        {/* <div>ru</div> */}
-        <Page data={data} index="ru" />
-      </Route>
-      <Route>
-        {/* <div>sr</div> */}
-        <Page data={data} index="sr" />
-      </Route>
-    </Switch>
-  </BrowserRouter>
+    <Route path="/ru">
+      {/* <div>ru</div> */}
+      <Page data={data} index="ru" />
+    </Route>
+    <Route>
+      {/* <div>sr</div> */}
+      <Page data={data} index="sr" />
+    </Route>
+  </Switch>
   // </Provider>
 
 );
