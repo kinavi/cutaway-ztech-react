@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
 import {
-  useLocation,
-  useParams,
-  useHistory,
   Route,
   Router,
   Switch,
@@ -24,7 +19,7 @@ import { About } from './components/about.jsx';
 import { Advantage } from './components/advantage.jsx';
 import { Table } from './components/table.jsx';
 // import {Warranty} from './components/warranty.jsx';
-import { ShowCaseContainer } from './components/showcase.jsx';
+import { ShowCaseContainer } from './components/showcase';
 import { Contacts } from './components/contacts.jsx';
 import { NavLink } from './components/Links.jsx';
 import Faq from './components/Faq';
@@ -100,7 +95,7 @@ const Page = (props) => {
       <Table {...data[index].table} />
       <ShowCaseContainer {...data[index].ShowCases} />
       {/* <Warranty data={data.WarrantyIcont}/> */}
-      <Faq {...data[index].faq} />
+      {/* <Faq {...data[index].faq} /> */}
       <Contacts {...data[index].contacts} />
 
       {/* </div> */}
