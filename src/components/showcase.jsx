@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 
-import {Gallery} from './gallery.jsx';
+import { Gallery } from './gallery.jsx';
 
 // import one from '../../public/444.png';
 // import two from '../../public/555.png';
@@ -21,27 +21,29 @@ const nameProduct = {
 //   'https://static.tildacdn.com/tild6331-3961-4463-b164-633838613437/5.jpg',
 // ];
 
-
-export const ShowCaseContainer = ({cases, title}) =>
-  <div className='show-case' id='showcase'>
-    <div className='show-case__title'>{title}</div>
-    {cases.map((item, index)=>
-      <div key={index} className='show-case__item'>
+export const ShowCaseContainer = ({ cases, title }) => (
+  <div className="show-case" id="showcase">
+    <div className="show-case__title">{title}</div>
+    {cases.map((item, index) => (
+      <div key={index} className="show-case__item">
         <ShowCase {...item} index={index} />
-      </div>,
-    )}
-  </div>;
+      </div>
+    ))}
+  </div>
+);
 
-const ShowCase = ({photoUrl, name, price, links, characteristic, index}) =>{
+const ShowCase = ({
+  photoUrl, name, price, links, characteristic, index,
+}) => {
   const [isMobile, setIsMobile] = useState(true);
   const windowSize = useWindowSize();
 
-  useEffect(()=>{
-    if (windowSize.width<1024) {
+  useEffect(() => {
+    if (windowSize.width < 1024) {
       setIsMobile(true);
     } else {
       setIsMobile(false);
-    };
+    }
   }, [windowSize]);
 
   const getNameProduct = () => {
@@ -53,33 +55,35 @@ const ShowCase = ({photoUrl, name, price, links, characteristic, index}) =>{
       case 2:
         return nameProduct.Suntech9pro;
       default:
-        return;
     }
   };
 
-  const renderTitleBlock = () =>
+  const renderTitleBlock = () => (
     <>
-      <div className='show-case__name'>
+      <div className="show-case__name">
         {name}
       </div>
-      <div className='show-case__price'>
+      <div className="show-case__price">
         {price}
       </div>
-    </>;
+    </>
+  );
 
   return (
     <>
       {
-        isMobile&&
+        isMobile
+          && (
           <>
             {renderTitleBlock()}
-            <Gallery nameProduct={getNameProduct()}/>
+            <Gallery nameProduct={getNameProduct()} />
           </>
+          )
           // <div className='show-case__photo'>
           //   <img src={getImg()} alt=""/>
           // </div>
       }
-      <div className='show-case__group'>
+      <div className="show-case__group">
         {
           isMobile || renderTitleBlock()
 
@@ -96,15 +100,17 @@ const ShowCase = ({photoUrl, name, price, links, characteristic, index}) =>{
             <div className='show-case__link'><button>{link.name}</button></div>,
           )}
         </div> */}
-        <div className='show-case__characteristic characteristic'>
-          {characteristic.map((item, i)=><div key={i} className='characteristic__group'>
-            <span className='characteristic__option'>
-              {item.option}
-            </span>
-            <span className='characteristic__text'>
-              {item.text}
-            </span>
-          </div>)}
+        <div className="show-case__characteristic characteristic">
+          {characteristic.map((item, i) => (
+            <div key={i} className="characteristic__group">
+              <span className="characteristic__option">
+                {item.option}
+              </span>
+              <span className="characteristic__text">
+                {item.text}
+              </span>
+            </div>
+          ))}
         </div>
         {/* {
           isMobile||
@@ -112,11 +118,13 @@ const ShowCase = ({photoUrl, name, price, links, characteristic, index}) =>{
         } */}
       </div>
       {
-        isMobile||
-        <div className='show-case__photo'>
-          <Gallery nameProduct={getNameProduct()}/>
+        isMobile
+        || (
+        <div className="show-case__photo">
+          <Gallery nameProduct={getNameProduct()} />
           {/* <img src={getImg()} alt=""/> */}
         </div>
+        )
       }
 
     </>
