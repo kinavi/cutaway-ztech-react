@@ -3,18 +3,20 @@ import React, { useEffect, useState } from 'react';
 import { IconContext } from 'react-icons';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
 
-import suntech5all from '../../public/photo/products/suntech5/1.png';
-import suntech51 from '../../public/photo/products/suntech5/2.png';
-import suntech52 from '../../public/photo/products/suntech5/3.png';
-import suntech53 from '../../public/photo/products/suntech5/4.png';
-import suntech54 from '../../public/photo/products/suntech5/5.png';
-import suntech55 from '../../public/photo/products/suntech5/6.png';
+import suntech5all from '../../../public/photo/products/suntech5/1.png';
+import suntech51 from '../../../public/photo/products/suntech5/2.png';
+import suntech52 from '../../../public/photo/products/suntech5/3.png';
+import suntech53 from '../../../public/photo/products/suntech5/4.png';
+import suntech54 from '../../../public/photo/products/suntech5/5.png';
+import suntech55 from '../../../public/photo/products/suntech5/6.png';
 
-import Suntech9pro1 from '../../public/photo/products/Suntech9Pro/01.png';
-import Suntech9pro2 from '../../public/photo/products/Suntech9Pro/02.png';
+import Suntech9pro1 from '../../../public/photo/products/Suntech9Pro/01.png';
+import Suntech9pro2 from '../../../public/photo/products/Suntech9Pro/02.png';
 
-import Suntech71 from '../../public/photo/products/Suntech7/1.png';
-import Suntech72 from '../../public/photo/products/Suntech7/2.png';
+import Suntech71 from '../../../public/photo/products/Suntech7/1.png';
+import Suntech72 from '../../../public/photo/products/Suntech7/2.png';
+import Suntech73 from '../../../public/photo/products/Suntech7/3.png';
+import Suntech74 from '../../../public/photo/products/Suntech7/4.png';
 
 const imgs = {
   suntech5: [
@@ -28,6 +30,8 @@ const imgs = {
   Suntech7: [
     Suntech71,
     Suntech72,
+    Suntech73,
+    Suntech74,
   ],
   Suntech9pro: [
     Suntech9pro1,

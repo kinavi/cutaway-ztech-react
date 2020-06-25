@@ -11,7 +11,7 @@ import {
   Link,
   BrowserRouter,
 } from 'react-router-dom';
-import App from './App';
+import App from './container/App';
 
 const Client = () => (
   <BrowserRouter>
