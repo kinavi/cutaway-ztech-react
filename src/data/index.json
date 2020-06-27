@@ -24,14 +24,14 @@
                 "url": "#showcase"
             },
             {
-                "text": "Контакти",
-                "url": "#contacts"
+              "text": "Контакти",
+              "url": "#contacts"
             }
         ],
         "buttonCalback": {
             "text": "Затражите позив"
         },
-        "phone": "+381999000",
+        "phone": "+381648822353",
         "logoUrl": "",
         "name": "SUNTECH"
     },
@@ -77,11 +77,11 @@
                 "url": "https://static.tildacdn.com/tild3630-3866-4064-b861-313232373033/Group_59.svg"
               },
               {
-                "text":"Смањење трошкова",
+                "text":"Бесконтактни рад",
                 "url": "https://static.tildacdn.com/tild3930-6334-4633-b631-333834376238/Group_10.svg"
               },
               {
-                "text":"Бесконтактни рад",
+                "text":"Смањење трошкова",
                 "url": "https://static.tildacdn.com/tild3338-3163-4539-a133-666630383662/hand_2.svg"
               },
               {
@@ -130,7 +130,7 @@
               "isString": true,
               "question":"Просечна цена једне дезинфекције",
               "response": [
-                "0,1 руб.", "0,5 руб."
+                "0,1 din.", "0,5 din."
               ]
             },
             {
@@ -203,7 +203,7 @@
         {
           "photoUrl": "https://cdn.discordapp.com/attachments/358227461139333131/712002060857376869/3.png",
           "name": "Столни дезинфектор за мале предузеће Suntech 5",
-          "price": "54 900 р.",
+          "price": "din",
           "links": [
             {
               "isLink": true,
@@ -265,7 +265,7 @@
         {
           "photoUrl": "https://static.tildacdn.com/tild3264-6634-4434-b232-653361303063/3.jpg",
           "name": "Подни дезинфектор за организације са среднем људским током Suntech 7",
-          "price": "54 900 р.",
+          "price": "din",
           "links": [
             {
               "isLink": true,
@@ -331,7 +331,7 @@
         {
           "photoUrl": "https://static.tildacdn.com/tild3264-6634-4434-b232-653361303063/3.jpg",
           "name": "Интерактивни дезинфектор за велике јавне организације са великим протоком посетилаца Suntech 9Pro",
-          "price": "54 900 р.",
+          "price": "din",
           "links": [
             {
               "isLink": true,
@@ -442,12 +442,62 @@
         "url":"https://static.tildacdn.com/tild3230-3334-4263-a437-323964343138/Group_10.svg"
       }
     ],
+    "faq":{
+      "title": "FAQ",
+      "img": "",
+      "list": [
+        { 
+          "caption": "WHAT'S THE AVERAGE TIME OF THE CHECKUP PER USER?",
+          "text": "The stand is designed as the control stand and does not require detainment. The time the users take to complete the temperature check and the disinfection does not exceed 5 to 7 seconds. Temperature measurement time is from 1 to 3 seconds. The rest of the time is for disinfection, which is also fully automated and contactless."
+        },
+        {
+          "caption": "IS THC DCVICt CASV то use?",
+          "text": "Yes, It It. Predefined logical steps are: The first step Is to measure the temperature that starts the momont the user comot in and comes into focus. The second step is disinfection, which is performed by tbo liter automatically lowering the hand* under the injectors that disperse the alcohol disinfectant The device Is Illustrated with the guidelines containing detailed instructions in three stops."
+        },
+        {
+          "caption": "IS THt APPLICATION IS MULTILINGUAL AND DOTS IT SUPPORT VOICE COMMANDS?",
+          "text": "The primary la the Cnfllish laiMjuafle. On-demand, it can be set on the other laneu.vjo. Also, complete voice evidence and eudio messago* ere m the Enjliah language."
+        },
+        {
+          "caption": "CAN THE DEVICE BE USED WITH THE REGISTRATION/LOGGING OPTION AS WELL AS THE CHECK4N OF THE EMPLOYEES AT THE ENTRANCE?",
+          "text": "In addition to thr temperature measurement option, tho device can be used with the following option»",
+          "options": [
+            {
+              "label": "race detection option with and without a mask (alerts high-ternperature users to put on the meskj"
+            },
+            {
+              "label": "Entry or chock-in option for worker! at the entrance fthis option m*y have the option of rneaiurlng the temperature)"
+            }, 
+            {
+              "label": "Option to open the doors or other iecurity sv»t*m* tto a uier with a h*h temperature or who has not been recognired by tho camera because ho и not registered m the system, will not open the door or allow the use of another system that requires venficationj"
+            },
+            {
+              "label": "Коврпж it in tho database! ton a daily or monthly basis"
+            },
+            {
+              "label": "An option whore the tnmporaturn is exclusively measured with all other options turned off ."
+            }
+          ]
+        },
+        {
+          "caption": "CAN THE DCVICC BE USED AFTER THE EPIDEMIC/PANDEMIC SITUATION?",
+          "text": "The device can be widely used after the epidemic/ pandemic situation as well because it is alio prevention from other viral end infectious diseases. Aside from tempereture meesunng option, logging and user control, disinfection provide* a high loud of protection in microenvironments, such as lactones, companies, health centers and other important locations. This creates macro protection and increases the security of the entire environment."
+        },
+        {
+          "caption": "TIMt OF DELIVERY?",
+          "text": "The time of delivery depends on the number of ordered devices and can vary up to 20 30 day*. For more details, you may contact us directly."
+        },
+        {
+          "caption": "IS THERE Л MAINTENANCE SUPPORT AVAILABLE?",
+          "text": "The warranty period is 1 years from the date of installation of the device. During this time. theHola Systems is at your service for any technical or other questions regarding the device."
+        }
+      ] 
+    },
     "contacts": {
       "title": "Контакты",
-      "phone": "+381999000",
+      "phone": "+381648822353",
       "email": "order@suntech.com",
-      "address": "Россия, Московская область, г. Дубна, ул. Университетская, д.11, стр. 29А'",
-      "text": "Общество с ограниченной ответственностью «Зорг» (ООО «Зорг») © 2010-2020 ООО \"Зорг\""
+      "address": "Maksima Gorkog 29, Beograd - Vračar, Srbij"
     }
   },
   "ru": {
@@ -482,7 +532,7 @@
         "buttonCalback": {
             "text": "Заказать звонок"
         },
-        "phone": "+381999000",
+        "phone": "+381648822353",
         "logoUrl": "",
         "name": "SUNTECH"
     },
@@ -654,7 +704,7 @@
         {
           "photoUrl": "https://cdn.discordapp.com/attachments/358227461139333131/712002060857376869/3.png",
           "name": "Настольный дезинфектор для небольших компаний Suntech 5",
-          "price": "54 900 р.",
+          "price": "руб",
           "links": [
             {
               "isLink": true,
@@ -716,7 +766,7 @@
         {
           "photoUrl": "https://static.tildacdn.com/tild3264-6634-4434-b232-653361303063/3.jpg",
           "name": "Напольный дезинфектор для организаций  со средним человекопотоком Suntech 7",
-          "price": "74 900 р.",
+          "price": "руб",
           "links": [
             {
               "isLink": true,
@@ -782,7 +832,7 @@
         {
           "photoUrl": "https://static.tildacdn.com/tild3264-6634-4434-b232-653361303063/3.jpg",
           "name": "Интерактивный дезинфектор для крупных публичных организаций с высоким потоком посетителей Suntech 9Pro",
-          "price": "125 900 р.",
+          "price": "руб",
           "links": [
             {
               "isLink": true,
@@ -893,12 +943,61 @@
         "url":"https://static.tildacdn.com/tild3230-3334-4263-a437-323964343138/Group_10.svg"
       }
     ],
+    "faq":{
+      "img": "",
+      "list": [
+        { 
+          "caption": "WHAT'S THE AVERAGE TIME OF THE CHECKUP PER USER?",
+          "text": "The stand is designed as the control stand and does not require detainment. The time the users take to complete the temperature check and the disinfection does not exceed 5 to 7 seconds. Temperature measurement time is from 1 to 3 seconds. The rest of the time is for disinfection, which is also fully automated and contactless."
+        },
+        {
+          "caption": "IS THC DCVICt CASV то use?",
+          "text": "Yes, It It. Predefined logical steps are: The first step Is to measure the temperature that starts the momont the user comot in and comes into focus. The second step is disinfection, which is performed by tbo liter automatically lowering the hand* under the injectors that disperse the alcohol disinfectant The device Is Illustrated with the guidelines containing detailed instructions in three stops."
+        },
+        {
+          "caption": "IS THt APPLICATION IS MULTILINGUAL AND DOTS IT SUPPORT VOICE COMMANDS?",
+          "text": "The primary la the Cnfllish laiMjuafle. On-demand, it can be set on the other laneu.vjo. Also, complete voice evidence and eudio messago* ere m the Enjliah language."
+        },
+        {
+          "caption": "CAN THE DEVICE BE USED WITH THE REGISTRATION/LOGGING OPTION AS WELL AS THE CHECK4N OF THE EMPLOYEES AT THE ENTRANCE?",
+          "text": "In addition to thr temperature measurement option, tho device can be used with the following option»",
+          "options": [
+            {
+              "label": "race detection option with and without a mask (alerts high-ternperature users to put on the meskj"
+            },
+            {
+              "label": "Entry or chock-in option for worker! at the entrance fthis option m*y have the option of rneaiurlng the temperature)"
+            }, 
+            {
+              "label": "Option to open the doors or other iecurity sv»t*m* tto a uier with a h*h temperature or who has not been recognired by tho camera because ho и not registered m the system, will not open the door or allow the use of another system that requires venficationj"
+            },
+            {
+              "label": "Коврпж it in tho database! ton a daily or monthly basis"
+            },
+            {
+              "label": "An option whore the tnmporaturn is exclusively measured with all other options turned off ."
+            }
+          ]
+        },
+        {
+          "caption": "CAN THE DCVICC BE USED AFTER THE EPIDEMIC/PANDEMIC SITUATION?",
+          "text": "The device can be widely used after the epidemic/ pandemic situation as well because it is alio prevention from other viral end infectious diseases. Aside from tempereture meesunng option, logging and user control, disinfection provide* a high loud of protection in microenvironments, such as lactones, companies, health centers and other important locations. This creates macro protection and increases the security of the entire environment."
+        },
+        {
+          "caption": "TIMt OF DELIVERY?",
+          "text": "The time of delivery depends on the number of ordered devices and can vary up to 20 30 day*. For more details, you may contact us directly."
+        },
+        {
+          "caption": "IS THERE Л MAINTENANCE SUPPORT AVAILABLE?",
+          "text": "The warranty period is 1 years from the date of installation of the device. During this time. theHola Systems is at your service for any technical or other questions regarding the device."
+        }
+      ] 
+    },
     "contacts": {
       "title": "Контакты",
-      "phone": "+381999000",
+      "phone": "+381648822353",
       "email": "order@suntech.com",
-      "address": "Россия, Московская область, г. Дубна, ул. Университетская, д.11, стр. 29А'",
-      "text": "Общество с ограниченной ответственностью «Зорг» (ООО «Зорг») © 2010-2020 ООО \"Зорг\""
+      "address": "Maksima Gorkog 29, Beograd - Vračar, Srbij"
     }
   },
   "en": {

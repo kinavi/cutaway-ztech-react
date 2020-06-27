@@ -34,10 +34,12 @@ module.exports = merge(baseConfig, {
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
+    // publicPath: path.resolve(__dirname, '../', 'public'),
     contentBase: path.resolve(__dirname, '../', 'public'),
     hot: true,
     port: 3000,
     open: true,
     historyApiFallback: true,
+
   },
 });
