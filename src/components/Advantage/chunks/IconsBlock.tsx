@@ -17,7 +17,7 @@ const IconBlock = (props: IconBlockPropsType): JSX.Element => {
         iconContexts.map((icon: IconType, index: number) => (
           <div key={index} className="icon-block__icon">
             <div className="icon-block__img">
-              <img src={ICONS_IMG[icon.index]} alt="" />
+              <img className="img" src={ICONS_IMG[icon.index]} alt="" />
             </div>
 
             <span>{icon.label}</span>

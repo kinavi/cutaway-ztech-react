@@ -47,7 +47,7 @@ const Advantage = (props: AdvantagesType): JSX.Element => {
       <div className="advantage" id="advantage">
         { isIconBlockInside || <IconsBlock iconContexts={icons} /> }
         <div className="advantage__img">
-          <img src={newD} alt="" />
+          <img className="img" src={newD} alt="" />
         </div>
         <div className="advantage__group">
           <div className="advantage__title">

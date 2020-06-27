@@ -18,8 +18,8 @@ const About = (props: AboutType): JSX.Element => {
 
   return (
     <div className="about">
-      <div className="about__poster">
-        <img src={about} alt="" />
+      <div className="about__img">
+        <img className="img" src={about} alt="" />
       </div>
       <div className="about__container">
         <div className="about__group">
