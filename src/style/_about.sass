@@ -2,17 +2,35 @@
     position: relative
     background: #EEEEEE
     overflow: hidden
-    &__poster
-        // width: 330px
+    &__img
+        width: 330px
         margin: 0 auto
-       
-        img
-            width: 100%
+        @media screen and ( min-width: 520px )
+            width: 750px
             height: 100%
-            object-fit: fill
+            position: absolute
+            right: -245px
+        @media screen and ( min-width: 767px )
+            right: -100px
+        @media screen and ( min-width: 1024px )
+            width: 760px
+            right: 0px
+        @media screen and (min-width: 1200px)
+            right: 10% 
+
+    &__container
+        @media screen and (min-width: 1200px)
+            padding: 0 15%
+
     &__group
         padding: 10px 20px
-       
+        @media screen and ( min-width: 520px )
+            position: relative
+            width: 285px
+            padding: 120px 40px
+        @media screen and ( min-width: 1024px )
+            width: 400px
+
     &__name
         font-size: 34px
         color: #37b7e6
@@ -25,6 +43,8 @@
 
         margin-top: 0px
         margin-bottom: 0px
+        @media screen and ( min-width: 520px )
+            font-size: 48px
        
     &__description
         font-size: 24px
@@ -38,6 +58,8 @@
 
         margin-top: 0px
         margin-bottom: 0px
+        @media screen and ( min-width: 520px )
+            font-size: 30px
         
     &__advantage
         color: #23395b
@@ -76,4 +98,5 @@
         border-color: transparent
         border-style: solid
         text-transform: uppercase
+    
         // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out

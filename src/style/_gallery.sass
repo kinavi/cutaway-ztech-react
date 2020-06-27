@@ -1,19 +1,19 @@
 .gallery
-    // width: 60%
-    // margin: 0 auto
     padding: 10px
     display: flex
-    // margin-bottom: 20px
+    @media screen and ( min-width: 520px )
+        width: 460px
+        margin: 0 auto
+    @media screen and ( min-width: 1024px )
+        display: flex
+        flex-direction: column
     &__img
-        // width: 600px
         width: 50%
         margin: 0 auto
     &__view-container
         position: relative
         width: 100%
         margin-right: 10px
-        // display: flex
-        // justify-content: space-between
         svg
             position: absolute
             top: 50%
@@ -27,14 +27,11 @@
         svg:last-child
             right: 0
     &__preview-container
-        // display: flex
-        // justify-content: center
-        // flex-direction: column
         column-count: 2
-
+        @media screen and ( min-width: 1024px )
+            display: flex
+            justify-content: space-around
     &__preview
-        // width: 100px
-        // width: 60px
         width: 40px
         cursor: pointer
     &__preview_active

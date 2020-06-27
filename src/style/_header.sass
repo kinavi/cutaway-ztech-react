@@ -5,7 +5,10 @@
     align-items: center
     justify-content: center
     position: relative
-
+    @media screen and ( min-width: 1024px )
+        height: 60px
+        padding: 0 40px
+        flex-direction: row
     &__menu
         position: absolute
         right: 0
@@ -25,6 +28,9 @@
     &__logo
         // width: 120px
         width: 35px
+        @media screen and ( min-width: 1024px )
+            position: absolute
+            width: 45px
              
     &__phone
         font-size: 19px
@@ -36,8 +42,13 @@
         a 
             color: #23395b
             text-decoration: none 
+
+        @media screen and ( min-width: 1024px )
+            margin-right: 40px
     &__group-links
         display: flex
+        @media screen and ( min-width: 1024px )
+            flex-grow: 1
 
     &__link
         color: #23395b

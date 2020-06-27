@@ -38,24 +38,29 @@
     fill: #709aab
     cursor: pointer
     
+.img
+    width: 100%
+    height: 100%
+    object-fit: fill
+
+body 
+    letter-spacing: 0.02em
+
+html 
+  scroll-behavior: smooth
+
+@import './collections/animation'
+@import './_nav'    
+@import './_header'
+@import './_about'
+@import './_advantage'
+@import './_table'
+@import './_show-case'
+@import './_icons'
+@import './_gallery'
+@import './_faq'
+@import './_contacts'
+@import './_warranty'
 
 
-@keyframes in 
-  from 
-    left: -100%
-  to 
-    left: 0%
 
-@import './320'
-@media screen and (min-width: 374px)
-    @import './375'
-    @media screen and (min-width: 424px)
-        @import './425'
-        @media screen and ( min-width: 520px )
-            @import './520'
-            @media screen and (min-width: 767px)
-                @import './756'
-                @media screen and ( min-width: 1024px )
-                    @import './1024'    
-                    @media screen and (min-width: 1200px)
-                        @import './1200'

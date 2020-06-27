@@ -27,11 +27,12 @@ img
     padding: 60px 0 80px
     background: #eeeeee
     position: relative
-    // width: 100%
-    // text-align: center
-    // margin-top: 100px
-    // padding: 60px 0 80px
-    // background: #eeeeee
+    @media screen and (min-width: 767px)
+        padding: 60px 40px 80px
+    @media screen and ( min-width: 1024px )
+        padding: 60px 5% 80px
+    @media screen and (min-width: 1200px)
+        padding: 60px 15% 80px
     &__title
         margin-bottom: 30px
         text-align: center
@@ -39,25 +40,36 @@ img
             @include font-title
             font-size: 20px
             font-weight: bold
+            @media screen and ( min-width: 1024px )
+                font-size: 29px
 
     &__container
     &__mark-group
         margin-top: 15px
         padding: 0 15px
+        @media screen and ( min-width: 1024px )
+            padding: 15px 15%
     &__mark_red
         @include font-mark
         color: #ff0000
         font-size: 14px
+        @media screen and ( min-width: 1024px )
+            font-size: 20px
     &__mark_green
         @include font-mark
         color: #00a146
         font-size: 14px
+        @media screen and ( min-width: 1024px )
+            font-size: 20px
 
 .tb-header
     &__group
         width: 50px
         height: 50px
         margin: 0 auto
+        @media screen and ( min-width: 1024px )
+            width: 80px
+            height: 80px
     &__text
         color: #23395b
         font-size: 11px
@@ -67,6 +79,8 @@ img
         background-position: center center
         border-color: transparent
         border-style: solid
+        @media screen and ( min-width: 1024px )
+            font-size: 18px
     &__body
     &__question
         color: #23395b
@@ -77,10 +91,14 @@ img
         background-position: center center
         border-color: transparent
         border-style: solid
+        @media screen and ( min-width: 1024px )
+            font-size: 18px
     &__response
         width: 50px
         height: 30px
         margin: 0 auto
+        @media screen and ( min-width: 1024px )
+            height: 25px
         span
             color: #23395b
             font-size: 12px
@@ -94,6 +112,8 @@ img
             display: flex
             flex-wrap: wrap
             justify-content: center
+            @media screen and ( min-width: 1024px )
+                font-size: 18px
 
 table
     // margin: 0 auto
@@ -112,6 +132,8 @@ td
 
 tr:hover td 
     background:  #eeeeee
+
+    
 
 
 
