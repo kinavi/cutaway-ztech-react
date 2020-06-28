@@ -1,5 +1,5 @@
 import React from 'react';
-import about from '../../../public/about.png';
+import about from '../../../image/about.png';
 
 type AboutType = {
   nameCompany: string,

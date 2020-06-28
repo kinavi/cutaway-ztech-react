@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
-// import adv from '../../public/decrip.jpg';// '../public/decrip.jpg';
 
-import newD from '../../../public/333.png';
+import ImgAdvantage from '../../../image/advantage.png';
 
 import { AdvantagesType, OutsideType } from '../../constants/types';
 
@@ -13,7 +12,6 @@ import IconsBlock from './chunks/IconsBlock';
 
 const Advantage = (props: AdvantagesType): JSX.Element => {
   const {
-    // title, Interior, Outside, IcontTexts,
     title, outsides, interior, icons,
   } = props;
   const windowSize = useWindowSize();
@@ -47,7 +45,7 @@ const Advantage = (props: AdvantagesType): JSX.Element => {
       <div className="advantage" id="advantage">
         { isIconBlockInside || <IconsBlock iconContexts={icons} /> }
         <div className="advantage__img">
-          <img className="img" src={newD} alt="" />
+          <img className="img" src={ImgAdvantage} alt="" />
         </div>
         <div className="advantage__group">
           <div className="advantage__title">

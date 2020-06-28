@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import faq from '../../../public/photo/faq.jpg';
+// import faq from '../../../image/photo/faq.jpg';
 import useWindowSize from '../../hooks/useWindowSize';
 import { INote } from './types';
 import Note from './chunks/Note';

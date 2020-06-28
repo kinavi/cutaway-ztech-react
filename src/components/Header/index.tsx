@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useWindowSize from '../../hooks/useWindowSize';
-import newLogo from '../../../public/newLog.png';
+import ImgLogo from '../../../image/logo.png';
 import Links from '../Links';
 
 // Пока не используем
@@ -39,7 +39,7 @@ const Header = (props: HeaderPropsType): JSX.Element => {
       }
       <div className="header__logo logo">
         <a href={urlLogo}>
-          <img className="logo__img" src={newLogo} />
+          <img className="logo__img" src={ImgLogo} alt="" />
         </a>
         {/* <h2 className='about__name'>{name}</h2> */}
       </div>

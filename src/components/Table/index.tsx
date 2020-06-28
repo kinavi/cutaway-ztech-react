@@ -1,7 +1,7 @@
 import React from 'react';
 
-import dislike from '../../../public/photo/dislike.png';
-import like from '../../../public/photo/like.png';
+import dislike from '../../../image/photo/dislike.png';
+import like from '../../../image/photo/like.png';
 
 import { TableType, IBodyTable } from '../../constants/types';
 
