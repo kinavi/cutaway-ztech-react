@@ -10,7 +10,7 @@ const Contacts = (props: ContactsType): JSX.Element => {
       <h4 className="contacts__title">{title}</h4>
       <hr />
       <br />
-      <a className="contacts__phone" href={`tel:${phone}`}>( +381) 64 88 22 353</a>
+      <a className="contacts__phone" href={`tel:${phone}`}>(+381) 61 64 54 683</a>
       {/* <h3 className="contacts__phone">{phone}</h3> */}
       <h3 className="contacts__email">{email}</h3>
       <p className="contacts__address">{address}</p>
