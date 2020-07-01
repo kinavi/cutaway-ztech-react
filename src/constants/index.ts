@@ -33,7 +33,7 @@ export const LANGUAGES_LINKS: Array<ILanguageLink> = [
 const NUMBER_PHONE = '+381616454683';
 const MAIL = 'order@disin-tech.com';
 const ADDRESS = 'Maksima Gorkog 29, Beograd - Vračar, Srbija';
-const COMPANY_NAME = 'disin-tech';
+export const COMPANY_NAME = 'disin-tech';
 
 interface IConstant<T> {
     [key: string]: T

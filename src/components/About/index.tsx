@@ -16,8 +16,13 @@ const About = (props: AboutType): JSX.Element => {
     advantage,
   } = props;
 
+  const setTitle = () => {
+    document.title = `${nameCompany.toUpperCase()} ${caption.toUpperCase()}`;
+  };
+
   return (
     <div className="about">
+      {setTitle()}
       <div className="about__img">
         <img className="img" src={about} alt="" />
       </div>
