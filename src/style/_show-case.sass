@@ -66,6 +66,15 @@
     &__name
         @include font-title
         margin-bottom: 20px
+        font-size: 18px
+        padding: 0 20px
+        @media screen and (min-width: 767px)
+            padding: 0 40px
+        @media screen and ( min-width: 1024px )
+            padding: 0
+    &__name-model
+        @include font-title
+        margin-bottom: 20px
         font-size: 24px
         padding: 0 20px
         @media screen and (min-width: 767px)
@@ -129,7 +138,7 @@
     &__option
         font-weight: bold
     &__text
-        
+        font-style: italic
     &__btn
         @include btn
 

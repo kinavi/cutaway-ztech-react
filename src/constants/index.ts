@@ -31,9 +31,9 @@ export const LANGUAGES_LINKS: Array<ILanguageLink> = [
 ];
 
 const NUMBER_PHONE = '+381648822353';
-const MAIL = 'order@suntech.com';
-const ADDRESS = 'Maksima Gorkog 29, Beograd - Vračar, Srbij';
-const COMPANY_NAME = 'SUNTECH';
+const MAIL = 'order@disin-tech.com';
+const ADDRESS = 'Maksima Gorkog 29, Beograd - Vračar, Srbija';
+const COMPANY_NAME = 'disin-tech';
 
 interface IConstant<T> {
     [key: string]: T
@@ -94,7 +94,7 @@ export const HEADER: IConstant<HeaderType> = {
 export const ABOUT: IConstant<AboutType> = {
   [LANGUAGES.ru]: {
     nameCompany: COMPANY_NAME,
-    caption: 'БЕСКОНТАКТНЫЙ РУЧНОЙ ДЕЗИНФЕКТОР',
+    caption: 'Бесконтактный Автоматический дезинфектор для рук',
     description: 'Эффективная защита здоровья сотрудников и посетителей',
     advantage: 'Уничтожает 99,99% микробов',
   },
@@ -109,6 +109,8 @@ export const ABOUT: IConstant<AboutType> = {
 export const ADVANTAGES: IConstant<AdvantagesType> = {
   [LANGUAGES.ru]: {
     title: 'Откройте для себя преимущества интеллектуального дезинфицирующего средства',
+    titleOutsid: 'Снаружи',
+    titleInterior: 'Внутри',
     outsides: [
       {
         advantage: 'Антивандальный защищенный корпус',
@@ -166,6 +168,8 @@ export const ADVANTAGES: IConstant<AdvantagesType> = {
   },
   [LANGUAGES.sr]: {
     title: 'Откријте предности интелигентни дезинфектор',
+    titleOutsid: 'Споља',
+    titleInterior: 'Унутра',
     outsides: [
       {
         advantage: 'Противградно кућиште',
@@ -227,7 +231,7 @@ export const TABLE: IConstant<TableType> = {
   [LANGUAGES.ru]: {
     title: 'Преимущества перед обычными средствам дезинфекции',
     head: [
-      '', 'Бесконтактный дезинфектор Suntech', 'Обычное дезинфицирующее средство с дозатором',
+      '', 'Бесконтактный дезинфектор Disin-tech', 'Обычное дезинфицирующее средство с дозатором',
     ],
     body: [
       {
@@ -243,6 +247,9 @@ export const TABLE: IConstant<TableType> = {
           '0,1 руб.', '0,5 руб.',
         ],
       },
+      // {
+      //   label: 'Возможность брендирования',
+      // },
       {
         label: 'Средняя цена одной дезинфекции',
       },
@@ -278,7 +285,7 @@ export const TABLE: IConstant<TableType> = {
   [LANGUAGES.sr]: {
     title: 'Предности у односу на класична дезинфекциона средства',
     head: [
-      '', 'Бесконтактни дезинфектор Suntech', 'Конвенционално дезинфекцијско средство с дозатором',
+      '', 'Бесконтактни дезинфектор Disin-tech', 'Конвенционално дезинфекцијско средство с дозатором',
     ],
     body: [
       {
@@ -294,14 +301,14 @@ export const TABLE: IConstant<TableType> = {
           '0,1 din.', '0,5 din.',
         ],
       },
-      {
-        label: 'Возможность брендирования',
-      },
+      // {
+      //   label: 'Могућност брендирања',
+      // },
       {
         label: 'Безбедност конструкциjи',
       },
       {
-        label: 'могућност регулације дозе',
+        label: 'Могућност регулације дозе',
       },
       {
         label: 'Време испаравања',
@@ -333,7 +340,8 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
     title: 'Товары',
     cases: [
       {
-        name: 'Настольный дезинфектор для небольших компаний Suntech 5',
+        name: 'Настольный дезинфектор для небольших компаний',
+        nameModel: 'Модель 5',
         price: 'руб',
         characteristics: [
           {
@@ -348,21 +356,21 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
             label: 'Объем резервуара: ',
             description: ' 5 л. ',
           },
-          {
-            label: 'Ресурс: ',
-            description: ' 5 млн. циклов.',
-          },
+          // {
+          //   label: 'Ресурс: ',
+          //   description: ' 5 млн. циклов.',
+          // },
           {
             label: 'Размеры: ',
             description: ' 500к300к300мм. ',
           },
           {
             label: 'Вес: ',
-            description: ' 7кг.',
+            description: ' 7 кг.',
           },
           {
             label: 'Потребляемая мощность: ',
-            description: ' 10Вт',
+            description: ' 10 Вт',
           },
           {
             label: 'Гарантия:',
@@ -371,7 +379,8 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
         ],
       },
       {
-        name: 'Напольный дезинфектор для организаций  со средним человекопотоком Suntech 7',
+        name: 'Напольный дезинфектор для организаций  со средним человекопотоком',
+        nameModel: 'Модель 7',
         price: 'руб',
         characteristics: [
           {
@@ -390,21 +399,21 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
             label: 'Объем резервуара: ',
             description: ' 10 л. ',
           },
-          {
-            label: 'Ресурс:',
-            description: ' 5млн. циклов.',
-          },
+          // {
+          //   label: 'Ресурс:',
+          //   description: ' 5 млн. циклов.',
+          // },
           {
             label: 'Размеры:',
             description: ' 1500к300к300мм.',
           },
           {
             label: 'Вес: ',
-            description: ' 15кг.',
+            description: ' 15 кг.',
           },
           {
             label: 'Потребляемая мощность: ',
-            description: ' 10Вт',
+            description: ' 10 Вт',
           },
           {
             label: 'Гарантия:',
@@ -413,7 +422,8 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
         ],
       },
       {
-        name: 'Интерактивный дезинфектор для крупных публичных организаций с высоким потоком посетителей Suntech 9Pro',
+        name: 'Интерактивный дезинфектор для крупных публичных организаций с высоким потоком посетителей',
+        nameModel: 'Модель 9 Pro',
         price: 'руб',
         characteristics: [
           {
@@ -444,21 +454,21 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
             label: 'Объем резервуара: ',
             description: ' 15 л. ',
           },
-          {
-            label: 'Ресурс:',
-            description: ' 5млн. циклов.',
-          },
+          // {
+          //   label: 'Ресурс:',
+          //   description: ' 5 млн. циклов.',
+          // },
           {
             label: 'Размеры:',
             description: ' 1600к300к300мм.',
           },
           {
             label: 'Вес:',
-            description: ' 25кг.',
+            description: ' 25 кг.',
           },
           {
             label: 'Потребляемая мощность: ',
-            description: ' 80Вт',
+            description: ' 80 Вт',
           },
           {
             label: 'Гарантия:',
@@ -472,12 +482,13 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
     title: 'Производи',
     cases: [
       {
-        name: 'Столни дезинфектор за мале предузеће Suntech 5',
+        name: 'Столни дезинфектор за мале предузеће',
+        nameModel: 'Модел 5',
         price: 'din',
         characteristics: [
           {
             label: 'Кућиште: ',
-            description: ' подно, противоударно.',
+            description: ' столно, противоударно.',
           },
           {
             label: 'Сензор: ',
@@ -487,30 +498,31 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
             label: 'Запремина резервоара је: ',
             description: ' 5 л. ',
           },
-          {
-            label: 'Ресурс:',
-            description: ' 5 милиона циклуса',
-          },
+          // {
+          //   label: 'Ресурс:',
+          //   description: ' 5 милиона циклуса',
+          // },
           {
             label: 'Димензије:',
             description: ' 500к300к300мм. ',
           },
           {
             label: 'Тежина:',
-            description: ' 7кг.',
+            description: ' 7 кг.',
           },
           {
             label: 'Потрошња енергије: ',
-            description: ' 10Вт',
+            description: ' 10 Вт',
           },
           {
             label: 'Гаранција:',
-            description: ' 2 Гаранција.',
+            description: ' 2 године.',
           },
         ],
       },
       {
-        name: 'Подни дезинфектор за организације са среднем људским током Suntech 7',
+        name: 'Подни дезинфектор за организације са средњим и великим људским током',
+        nameModel: 'Модел 7',
         price: 'din',
         characteristics: [
           {
@@ -529,30 +541,31 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
             label: 'Запремина резервоара је: ',
             description: ' 10 л. ',
           },
-          {
-            label: 'Ресурс:',
-            description: ' 5 милиона циклуса',
-          },
+          // {
+          //   label: 'Ресурс:',
+          //   description: ' 5 милиона циклуса',
+          // },
           {
             label: 'Димензије:',
             description: ' 1500к300к300мм.',
           },
           {
             label: 'Тежина:',
-            description: ' 15кг.',
+            description: ' 15 кг.',
           },
           {
             label: 'Потрошња енергије: ',
-            description: ' 10Вт',
+            description: ' 10 Вт',
           },
           {
             label: 'Гаранција:',
-            description: ' 2 Гаранција.',
+            description: ' 2 године.',
           },
         ],
       },
       {
-        name: 'Интерактивни дезинфектор за велике јавне организације са великим протоком посетилаца Suntech 9Pro',
+        name: 'Интерактивни дезинфектор за велике јавне организације са великим протоком посетилаца',
+        nameModel: 'Модел 9 Pro',
         price: 'din',
         characteristics: [
           {
@@ -583,25 +596,25 @@ export const SHOWCASES: IConstant<ShowCasesType> = {
             label: 'Запремина резервоара је: ',
             description: ' 15 л. ',
           },
-          {
-            label: 'Ресурс:',
-            description: ' 5 милиона циклуса',
-          },
+          // {
+          //   label: 'Ресурс:',
+          //   description: ' 5 милиона циклуса',
+          // },
           {
             label: 'Димензије:',
             description: ' 1600к300к300мм.',
           },
           {
             label: 'Тежина:',
-            description: ' 25кг.',
+            description: ' 25 кг.',
           },
           {
             label: 'Потрошња енергије: ',
-            description: ' 80Вт',
+            description: ' 80 Вт',
           },
           {
             label: 'Гаранција:',
-            description: ' 2 Гаранција.',
+            description: ' 2 године.',
           },
         ],
       },

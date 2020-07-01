@@ -47,7 +47,9 @@ export type AdvantagesType = {
     title: string,
     outsides: Array<OutsideType>,
     interior: Array<string>,
-    icons: Array<IconType>
+    icons: Array<IconType>,
+    titleOutsid: string,
+    titleInterior: string
 }
 
 export interface IBodyTable {
@@ -69,6 +71,7 @@ export interface ICharacteristic {
 export interface ICase {
     name: string,
     price: string,
+    nameModel: string,
     characteristics: Array<ICharacteristic>
 
 }

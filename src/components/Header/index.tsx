@@ -44,7 +44,7 @@ const Header = (props: HeaderPropsType): JSX.Element => {
         {/* <h2 className='about__name'>{name}</h2> */}
       </div>
       <div className="header__phone">
-        <a href={`tel:${phone}`}>{phone}</a>
+        <a href={`tel:${phone}`}>( +381) 64 88 22 353</a>
       </div>
       {
         isMobile || <Menu onClick={onOpenMenu} />

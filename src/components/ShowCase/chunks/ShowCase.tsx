@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import useWindowSize from '../../../hooks/useWindowSize';
-import { Gallery } from '../../Gallery';
+import Gallery from '../../Gallery';
 import { ICase, ICharacteristic } from '../../../constants/types';
 
 const nameProduct = {
@@ -11,7 +11,7 @@ const nameProduct = {
 
 const ShowCase = (props: ICase & {index: number}): JSX.Element => {
   const {
-    name, price, characteristics, index,
+    name, price, characteristics, index, nameModel,
   } = props;
 
   const [isMobile, setIsMobile] = useState(true);
@@ -25,7 +25,7 @@ const ShowCase = (props: ICase & {index: number}): JSX.Element => {
     }
   }, [windowSize]);
 
-  const getNameProduct = () => {
+  const getNameProduct = (): string | null => {
     switch (index) {
       case 0:
         return nameProduct.suntech5;
@@ -34,17 +34,21 @@ const ShowCase = (props: ICase & {index: number}): JSX.Element => {
       case 2:
         return nameProduct.Suntech9pro;
       default:
+        return null;
     }
   };
 
   const renderTitleBlock = () => (
     <>
+      <div className="show-case__name-model">
+        {nameModel}
+      </div>
       <div className="show-case__name">
         {name}
       </div>
-      <div className="show-case__price">
+      {/* <div className="show-case__price">
         {price}
-      </div>
+      </div> */}
     </>
   );
 
@@ -68,6 +72,7 @@ const ShowCase = (props: ICase & {index: number}): JSX.Element => {
               <span className="characteristic__option">
                 {item.label}
               </span>
+              <br />
               <span className="characteristic__text">
                 {item.description}
               </span>

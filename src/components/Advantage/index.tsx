@@ -12,7 +12,7 @@ import IconsBlock from './chunks/IconsBlock';
 
 const Advantage = (props: AdvantagesType): JSX.Element => {
   const {
-    title, outsides, interior, icons,
+    title, outsides, interior, icons, titleInterior, titleOutsid,
   } = props;
   const windowSize = useWindowSize();
   // const [it, seIt] = useState(false)
@@ -35,7 +35,7 @@ const Advantage = (props: AdvantagesType): JSX.Element => {
 
   const AdvantageInterior = (): JSX.Element => (
     <div className="advantage__interior interior">
-      <span className="interior__title">Унутра</span>
+      <span className="interior__title">{titleInterior}</span>
       { interior.map((item: string, index: number): JSX.Element => <OptionInterior key={index} value={item} />)}
     </div>
   );
@@ -52,7 +52,7 @@ const Advantage = (props: AdvantagesType): JSX.Element => {
             {title}
           </div>
           <div className="advantage__outside outside">
-            <span className="outside__title">Споља</span>
+            <span className="outside__title">{titleOutsid}</span>
             {outsides.map((item: OutsideType, index: number) => (
               <OptionOutside
                 key={index}
