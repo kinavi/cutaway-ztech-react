@@ -1,5 +1,5 @@
 import {
-  TableType, ShowCasesType, ContactsType,
+  TableType, ShowCasesType, ContactsType, FormType,
   ILanguage, ILanguageLink, HeaderType, AboutType, AdvantagesType, NavigationBarType,
 } from './types';
 
@@ -22,16 +22,16 @@ const LANGUAGES: ILanguage = {
 export const LANGUAGES_LINKS: Array<ILanguageLink> = [
   {
     label: 'српски',
-    url: '/',
+    url: '',
   },
   {
     label: 'русский',
-    url: `/${LANGUAGES.ru}`,
+    url: `${LANGUAGES.ru}`,
   },
 ];
 
 const NUMBER_PHONE = '+381616454683';
-const MAIL = 'order@disin-tech.com';
+export const MAIL = 'order@disin-tech.com';
 const ADDRESS = 'Maksima Gorkog 29, Beograd - Vračar, Srbija';
 export const COMPANY_NAME = 'disin-tech';
 
@@ -69,6 +69,7 @@ export const HEADER: IConstant<HeaderType> = {
     urlLogo: '',
     nameCompany: COMPANY_NAME,
     phone: NUMBER_PHONE,
+    textButton: 'Заказать звонок',
   },
   [LANGUAGES.sr]: {
     Navigationlinks: [
@@ -88,6 +89,7 @@ export const HEADER: IConstant<HeaderType> = {
     urlLogo: '',
     nameCompany: COMPANY_NAME,
     phone: NUMBER_PHONE,
+    textButton: 'Заказать звонок',
   },
 };
 
@@ -97,12 +99,14 @@ export const ABOUT: IConstant<AboutType> = {
     caption: 'Бесконтактный Автоматический дезинфектор для рук',
     description: 'Эффективная защита здоровья сотрудников и посетителей',
     advantage: 'Уничтожает 99,99% микробов',
+    textButton: 'Заказать звонок',
   },
   [LANGUAGES.sr]: {
     nameCompany: COMPANY_NAME,
     caption: 'БЕСКОНТАКТНИ ДЕЗИНФЕКТОР РУКУ',
     description: 'Ефикасна заштита здравља запослених и посетиоциа',
     advantage: 'Уништава 99,99% микроба',
+    textButton: 'Заказать звонок',
   },
 };
 
@@ -634,5 +638,34 @@ export const CONTACTS: IConstant<ContactsType> = {
     phone: NUMBER_PHONE,
     email: MAIL,
     address: ADDRESS,
+  },
+};
+
+export const FORM: IConstant<FormType> = {
+  [LANGUAGES.ru]: {
+    title: 'Оставте заявку',
+    messange: 'Заполните и отправте форму. В близжайшее время с вами свяжется наш специалист',
+    nameLabel: 'Как можно к вам обращаться?',
+    emailLabel: 'Aдрес электронной почты',
+    numberLabel: 'Номер телефона',
+    placeholderName: 'ФИО',
+    placeholderNumber: '89123456789',
+    placeholderEmail: 'email@mail.net',
+    buttonLabel: 'Отправить',
+    commentLabel: 'Комментарий',
+    placeholderComment: 'Оставьте комментарий',
+  },
+  [LANGUAGES.sr]: {
+    title: 'Оставте заявку',
+    messange: 'Заполните и отправте форму. В близжайшее время с вами свяжется наш специалист',
+    nameLabel: 'Как можно к вам обращаться?',
+    emailLabel: 'Aдрес электронной почты',
+    numberLabel: 'Номер телефона',
+    placeholderName: 'ФИО',
+    placeholderNumber: '89123456789',
+    placeholderEmail: 'email@mail.net',
+    buttonLabel: 'Отправить',
+    commentLabel: 'Комментарий',
+    placeholderComment: 'Оставьте комментарий',
   },
 };

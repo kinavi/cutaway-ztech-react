@@ -23,14 +23,16 @@ export type HeaderType = {
     Navigationlinks: Array<IHeaderLinks>,
     phone: string,
     urlLogo: string,
-    nameCompany: string
+    nameCompany: string,
+    textButton: string,
 }
 
 export type AboutType = {
     nameCompany: string,
     caption: string,
     description: string,
-    advantage: string
+    advantage: string,
+    textButton: string,
 }
 
 export type OutsideType = {
@@ -87,3 +89,17 @@ export type ContactsType = {
     email: string,
     address: string
 }
+
+export type FormType = {
+    placeholderName: string;
+    placeholderNumber: string;
+    placeholderEmail: string;
+    placeholderComment: string;
+    messange: string;
+    title: string;
+    nameLabel: string;
+    numberLabel: string;
+    emailLabel: string;
+    commentLabel: string;
+    buttonLabel: string;
+  }

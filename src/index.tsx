@@ -9,6 +9,7 @@ import App from './container/App';
 import './style/SuperFormReset.css';
 import 'normalize.css';
 import './style/index.sass';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import logo from '../image/logo.png';
 

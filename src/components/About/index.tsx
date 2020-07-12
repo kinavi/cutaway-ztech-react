@@ -1,11 +1,13 @@
 import React from 'react';
 import about from '../../../image/about.png';
+import CallBackButton from '../Header/chunks/CallBackButton';
 
 type AboutType = {
   nameCompany: string,
   caption: string,
   description: string,
   advantage: string,
+  textButton: string,
 }
 
 const About = (props: AboutType): JSX.Element => {
@@ -14,6 +16,7 @@ const About = (props: AboutType): JSX.Element => {
     caption,
     description,
     advantage,
+    textButton,
   } = props;
 
   const setTitle = () => {
@@ -32,7 +35,8 @@ const About = (props: AboutType): JSX.Element => {
           <h1 className="about__description">{caption}</h1>
           <h3 className="about__advantage">{description}</h3>
           <div className="about__where">{advantage}</div>
-          {/* <button className='about__btn'>Заказать</button> */}
+          {/** TODO Дублирование кода. Взять кнопку из формы */}
+          <CallBackButton label={textButton} mix="about__callback" />
         </div>
       </div>
     </div>
