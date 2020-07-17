@@ -47,7 +47,7 @@ const Header = (props: HeaderPropsType): JSX.Element => {
         <span>{MAIL}</span>
       </div>
       <div className="header__phone">
-        <a href={`tel:${phone}`}>(+381) 61 64 54 683</a>
+        <a href={`tel:${phone}`}>(+999) 99 99 99 999</a>
       </div>
       <CallBackButton label={textButton} mix="header__callback" />
       {
