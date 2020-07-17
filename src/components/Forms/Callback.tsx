@@ -40,18 +40,21 @@ const CallbackForm = (props: FormPropsType): JSX.Element => {
       </div>
       <form className="form__body" action="mail.php" method="POST">
         <Field
+          dataId="user_phone"
           isRequired
           label={numberLabel}
           placeholder={placeholderNumber}
           mix={`${commonMixField}${!isMobile ? 'colum_mobile' : ''}`}
         />
         <Field
+          dataId="user_email"
           isRequired
           label={emailLabel}
           placeholder={placeholderEmail}
           mix={`${commonMixField}${!isMobile ? 'colum_mobile' : ''}`}
         />
         <Field
+          dataId="user_name"
           isRequired
           label={nameLabel}
           placeholder={placeholderName}

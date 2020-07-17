@@ -30,10 +30,10 @@ export const LANGUAGES_LINKS: Array<ILanguageLink> = [
   },
 ];
 
-const NUMBER_PHONE = '+381616454683';
-export const MAIL = 'order@disin-tech.com';
-const ADDRESS = 'Maksima Gorkog 29, Beograd - Vračar, Srbija';
-export const COMPANY_NAME = 'disin-tech';
+const NUMBER_PHONE = '+9999999999';
+export const MAIL = 'test@test.com';
+const ADDRESS = 'Test test test test test test tes';
+export const COMPANY_NAME = 'Test-tes';
 
 interface IConstant<T> {
     [key: string]: T
@@ -643,29 +643,29 @@ export const CONTACTS: IConstant<ContactsType> = {
 
 export const FORM: IConstant<FormType> = {
   [LANGUAGES.ru]: {
-    title: 'Оставте заявку',
-    messange: 'Заполните и отправте форму. В близжайшее время с вами свяжется наш специалист',
-    nameLabel: 'Как можно к вам обращаться?',
-    emailLabel: 'Aдрес электронной почты',
-    numberLabel: 'Номер телефона',
-    placeholderName: 'ФИО',
-    placeholderNumber: '89123456789',
-    placeholderEmail: 'email@mail.net',
+    title: 'Оставьте заявку',
+    messange: 'Заполните и отправьте форму. В ближайшее время с вами свяжется наш специалист.',
+    nameLabel: 'Имя',
+    emailLabel: 'Почта',
+    numberLabel: 'Телефона',
+    placeholderName: '',
+    placeholderNumber: '',
+    placeholderEmail: '',
     buttonLabel: 'Отправить',
     commentLabel: 'Комментарий',
-    placeholderComment: 'Оставьте комментарий',
+    placeholderComment: '',
   },
   [LANGUAGES.sr]: {
-    title: 'Оставте заявку',
-    messange: 'Заполните и отправте форму. В близжайшее время с вами свяжется наш специалист',
-    nameLabel: 'Как можно к вам обращаться?',
-    emailLabel: 'Aдрес электронной почты',
-    numberLabel: 'Номер телефона',
-    placeholderName: 'ФИО',
-    placeholderNumber: '89123456789',
-    placeholderEmail: 'email@mail.net',
+    title: 'Оставите захтев',
+    messange: 'Попуните формулар. Ускоро ћемо вас контактирати.',
+    nameLabel: 'Ime',
+    emailLabel: 'email',
+    numberLabel: 'Телефона',
+    placeholderName: '',
+    placeholderNumber: '',
+    placeholderEmail: '',
     buttonLabel: 'Отправить',
-    commentLabel: 'Комментарий',
-    placeholderComment: 'Оставьте комментарий',
+    commentLabel: 'Коментар',
+    placeholderComment: '',
   },
 };
