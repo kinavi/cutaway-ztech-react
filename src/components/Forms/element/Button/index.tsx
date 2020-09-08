@@ -12,7 +12,7 @@ const Button = (props: ButtonPropsType): JSX.Element => {
   } = props;
   return (
     <div className={`button ${mix}`}>
-      <button type="submit" onClick={onClick} className="btn btn-outline-primary">{label}</button>
+      <button type="submit" onClick={onClick} className="btn btn-success">{label}</button>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 export interface ILanguage {
     ru: string
     sr: string
+    en: string
     [key: string]: string
 }
 
